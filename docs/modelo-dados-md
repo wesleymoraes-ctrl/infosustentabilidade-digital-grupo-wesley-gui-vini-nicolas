@@ -1,1 +1,59 @@
+# 🗄️ Modelo de Dados - Lixo Eletrônico Alto Vale
 
+> [!NOTE]
+> Este documento detalha a arquitetura do banco de dados relacional hospedado no **Supabase**, utilizado para mapear e gerenciar o descarte de resíduos tecnológicos na região.
+
+## 🗺️ Diagrama de Relações (Conceitual)
+* 📍 `pontos_coleta` (1) ───► (N) 📋 `procedimentos_descarte`
+* 📍 `pontos_coleta` (1) ───► (N) 🔌 `materiais_aceitos`
+* 📍 `pontos_coleta` (1) ───► (N) 📸 `evidencias`
+
+---
+
+## 📊 Dicionário de Dados
+
+### 📍 Tabela: `pontos_coleta`
+> [!TIP]
+> Armazena a localização exata e as formas de contato dos pontos físicos de coleta cadastrados.
+
+
+| Campo | Tipo | Descrição | Chave |
+| :--- | :--- | :--- | :--- |
+| 🆔 `id` | INT / UUID | Identificador único do ponto | **PK** |
+| 🏢 `nome` | VARCHAR | Nome do local ou instituição | |
+| 🏠 `endereço` | VARCHAR | Rua, número e complemento | |
+| 🏘️ `bairro` | VARCHAR | Bairro onde o ponto está localizado | |
+| 🏙️ `cidade` | VARCHAR | Cidade do Alto Vale | |
+| 📞 `contato` | VARCHAR | Telefone, e-mail ou WhatsApp | |
+| 🌐 `link_maps` | TEXT | URL de localização do Google Maps | |
+| 📝 `observação` | TEXT | Detalhes adicionais sobre o local | |
+
+### 🔌 Tabela: `materiais_aceitos`
+> [!IMPORTANT]
+> Relação de quais categorias de resíduos cada ponto de coleta está autorizado a receber.
+
+
+| Campo | Tipo | Descrição | Chave |
+| :--- | :--- | :--- | :--- |
+| 🆔 `id_material` | INT / UUID | Identificador único do material | **PK** |
+| 🔑 `id_ponto` | INT / UUID | Vínculo com a tabela pontos_coleta | **FK** |
+| 🔋 `tipo_material` | VARCHAR | Categoria (Ex: Pilhas, Baterias, Monitores) | |
+| ✅ `aceita` | BOOLEAN | `TRUE` para sim / `FALSE` para não | |
+| 📝 `observação` | TEXT | Limite de peso, volume ou restrições | |
+
+### 📸 Tabela: `evidencias`
+> [!WARNING]
+> Registro visual ou documental que comprova a existência real e o estado do ponto de coleta.
+
+
+| Campo | Tipo | Descrição | Chave |
+| :--- | :--- | :--- | :--- |
+| 🆔 `id` | INT / UUID | Identificador único da evidência | **PK** |
+| 🔑 `id_ponto` | INT / UUID | Vínculo com a tabela pontos_coleta | **FK** |
+| 📂 `tipo` | VARCHAR | Categoria do arquivo (Foto, Vídeo, Documento) | |
+| 📄 `descrição` | TEXT | Detalhes sobre o que está sendo provado | |
+| 🔗 `arquivo_link` | TEXT | URL do arquivo (Bucket Supabase / Drive) | |
+| 📅 `data_verificação`| DATE | Data em que a evidência foi checada | |
+
+---
+[⬅️ Voltar para o README principal](README.md)
