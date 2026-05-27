@@ -1,5 +1,6 @@
 # 🗄️ Modelo de Dados - Lixo Eletrônico Alto Vale
 
+
 > [!NOTE]
 > Este documento detalha a arquitetura do banco de dados relacional hospedado no **Supabase**, utilizado para mapear e gerenciar o descarte de resíduos tecnológicos na região.
 
