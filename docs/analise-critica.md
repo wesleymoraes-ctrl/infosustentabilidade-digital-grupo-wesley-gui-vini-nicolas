@@ -1,4 +1,4 @@
-### 📊 3. analises_criticas
+### analises_criticas
 Espaço para o grupo documentar a avaliação do cenário de descarte em cada município.
 
 
