@@ -1,4 +1,4 @@
-### 📸 5. evidencias
+### 5. evidencias
 Registro visual ou documental que comprova a existência e a situação do ponto de coleta.
 
 
