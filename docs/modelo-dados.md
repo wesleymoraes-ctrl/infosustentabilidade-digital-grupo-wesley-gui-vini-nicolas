@@ -85,4 +85,4 @@
 | 🚀 `melhoria` | TEXT | Soluções propostas pelo grupo para otimizar o ecossistema | |
 
 ---
-[⬅️ Voltar para o README principal](README.md)
+[⬅️ Voltar para o README principal](../README.md)
