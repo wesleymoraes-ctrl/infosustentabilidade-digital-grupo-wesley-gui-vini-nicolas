@@ -1,5 +1,4 @@
-# 🗄️ Modelo de Dados - Lixo Eletrônico Alto Vale
-
+# 🗂️ Modelo de Dados - Lixo Eletrônico Alto Vale
 
 > [!NOTE]
 > Este documento detalha a arquitetura do banco de dados relacional hospedado no **Supabase**, utilizado para mapear e gerenciar o descarte de resíduos tecnológicos na região.
@@ -8,6 +7,7 @@
 * 📍 `pontos_coleta` (1) ───► (N) 📋 `procedimentos_descarte`
 * 📍 `pontos_coleta` (1) ───► (N) 🔌 `materiais_aceitos`
 * 📍 `pontos_coleta` (1) ───► (N) 📸 `evidencias`
+* 🏙️ `municipio` (1) ───────► (1) 📊 `analises_criticas`
 
 ---
 
@@ -15,46 +15,70 @@
 
 ### 📍 Tabela: `pontos_coleta`
 > [!TIP]
-> Armazena a localização exata e as formas de contato dos pontos físicos de coleta cadastrados.
-
+> Armazena a localização exata e as formas de contato dos pontos físicos de coleta (ou locais de campanhas temporárias) cadastrados.
 
 | Campo | Tipo | Descrição | Chave |
 | :--- | :--- | :--- | :--- |
 | 🆔 `id` | INT / UUID | Identificador único do ponto | **PK** |
-| 🏢 `nome` | VARCHAR | Nome do local ou instituição | |
+| 🏢 `nome` | VARCHAR | Nome do local ou instituição (Ex: Prefeitura de Atalanta) | |
 | 🏠 `endereço` | VARCHAR | Rua, número e complemento | |
 | 🏘️ `bairro` | VARCHAR | Bairro onde o ponto está localizado | |
 | 🏙️ `cidade` | VARCHAR | Cidade do Alto Vale | |
 | 📞 `contato` | VARCHAR | Telefone, e-mail ou WhatsApp | |
 | 🌐 `link_maps` | TEXT | URL de localização do Google Maps | |
-| 📝 `observação` | TEXT | Detalhes adicionais sobre o local | |
+| 📝 `observação` | TEXT | Detalhes adicionais sobre o local (Ex: Ponto Fixo ou Temporário) | |
 
 ### 🔌 Tabela: `materiais_aceitos`
 > [!IMPORTANT]
 > Relação de quais categorias de resíduos cada ponto de coleta está autorizado a receber.
 
-
 | Campo | Tipo | Descrição | Chave |
 | :--- | :--- | :--- | :--- |
 | 🆔 `id_material` | INT / UUID | Identificador único do material | **PK** |
 | 🔑 `id_ponto` | INT / UUID | Vínculo com a tabela pontos_coleta | **FK** |
-| 🔋 `tipo_material` | VARCHAR | Categoria (Ex: Pilhas, Baterias, Monitores) | |
+| 🔋 `tipo_material` | VARCHAR | Categoria (Ex: Pilhas, Baterias, Monitores, Linha Branca) | |
 | ✅ `aceita` | BOOLEAN | `TRUE` para sim / `FALSE` para não | |
 | 📝 `observação` | TEXT | Limite de peso, volume ou restrições | |
+
+### 📋 Tabela: `procedimentos_descarte`
+> [!NOTE]
+> Define as regras, custos e a logística necessária para que o morador consiga entregar o lixo eletrônico no ponto de coleta.
+
+| Campo | Tipo | Descrição | Chave |
+| :--- | :--- | :--- | :--- |
+| 🆔 `id` | INT / UUID | Identificador único do procedimento | **PK** |
+| 🔑 `id_ponto` | INT / UUID | Vínculo com a tabela pontos_coleta | **FK** |
+| ⏰ `horario` | VARCHAR | Horário de funcionamento ou período da campanha | |
+| 📅 `agendamento` | BOOLEAN | Exige agendamento prévio? (`TRUE`/`FALSE`) | |
+| 💰 `custo` | DECIMAL | Valor cobrado pelo descarte (Zero se for gratuito) | |
+| 🚚 `modalidade` | VARCHAR | Ex: Campanha Temporária, Entrega no Local, Coleta em Casa | |
+| 📝 `descrição` | TEXT | Instruções detalhadas (Ex: Trazer embalado em saco plástico) | |
 
 ### 📸 Tabela: `evidencias`
 > [!WARNING]
 > Registro visual ou documental que comprova a existência real e o estado do ponto de coleta.
 
-
 | Campo | Tipo | Descrição | Chave |
 | :--- | :--- | :--- | :--- |
 | 🆔 `id` | INT / UUID | Identificador único da evidência | **PK** |
 | 🔑 `id_ponto` | INT / UUID | Vínculo com a tabela pontos_coleta | **FK** |
-| 📂 `tipo` | VARCHAR | Categoria do arquivo (Foto, Vídeo, Documento) | |
-| 📄 `descrição` | TEXT | Detalhes sobre o que está sendo provado | |
+| 📂 `tipo` | VARCHAR | Categoria do arquivo (Foto, Vídeo, Print de Rede Social) | |
+| 📄 `descrição` | TEXT | Detalhes sobre o que está sendo provado (Ex: Panfleto da Campanha) | |
 | 🔗 `arquivo_link` | TEXT | URL do arquivo (Bucket Supabase / Drive) | |
-| 📅 `data_verificação`| DATE | Data em que a evidência foi checada | |
+| 📅 `data_verificação`| DATE | Data em que a evidência foi checada (Ex: 14/05/2026) | |
+
+### 📊 Tabela: `analises_criticas`
+> [!TIP]
+> Guarda as avaliações feitas pelos pesquisadores do grupo sobre a realidade da logística e divulgação do descarte em cada município.
+
+| Campo | Tipo | Descrição | Chave |
+| :--- | :--- | :--- | :--- |
+| 🆔 `id` | INT / UUID | Identificador único da análise | **PK** |
+| 🏙️ `cidade` | VARCHAR | Município avaliado (Ex: Atalanta, Rio do Sul, etc) | |
+| 🟢 `facilidade` | TEXT | Descrição de quão fácil ou difícil é o acesso ao descarte | |
+| 🔴 `dificuldades` | TEXT | Principais obstáculos encontrados pelos moradores | |
+| 📣 `divulgacao` | TEXT | Como a prefeitura/instituição informa a população | |
+| 🚀 `melhorias` | TEXT | Sugestões do grupo para a logística verde da cidade | |
 
 ---
 [⬅️ Voltar para o README principal](README.md)
