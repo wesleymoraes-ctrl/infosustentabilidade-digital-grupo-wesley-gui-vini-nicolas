@@ -11,9 +11,8 @@
 > [!TIP]
 > Utilize os links abaixo para navegar rapidamente entre as diferentes abas e arquivos de documentação do nosso sistema:
 
-* 📄 [**Página Inicial (README)**](./README.md)
-* 🔎 [**Análise Crítica Regional**](#-análise-crítica-do-descarte-na-região)
-* 🗂️ [**Modelo de Dados (Supabase)**](./modelo_de_dados.md)
+* 🔎 [**Análise Crítica Regional**](#analise-critica.md)
+* 🗂️ [**Modelo de Dados (Supabase)**](./modelo-dados.md)
 
 ---
 
