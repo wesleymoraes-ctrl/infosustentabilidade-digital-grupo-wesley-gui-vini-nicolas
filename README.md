@@ -6,16 +6,6 @@
 
 ---
 
-## 🗺️ Navegação do Projeto
-
-> [!TIP]
-> Utilize os links abaixo para navegar rapidamente entre as diferentes abas e arquivos de documentação do nosso sistema:
-
-* 🔎 [**Análise Crítica Regional**](#analise-critica.md)
-* 🗂️ [**Modelo de Dados (Supabase)**](../modelo-dados.md)
-
----
-
 ## 👥 Integrantes do Grupo
 
 > [!TIP]
