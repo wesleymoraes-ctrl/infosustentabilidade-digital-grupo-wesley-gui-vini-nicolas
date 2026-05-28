@@ -23,3 +23,6 @@ Abaixo estão listadas as evidências reais encontradas e documentadas para cada
 
 > [!WARNING]
 > Algumas campanhas possuem datas antigas ou links de notícias (como o caso de Brusque em 2020). Isto evidencia a necessidade de **atualização constante** por parte das autarquias e justifica o desenvolvimento de um sistema centralizado como o nosso, para manter a população sempre informada com dados recentes.
+
+
+[⬅️ Voltar para o README principal](../README.md)
