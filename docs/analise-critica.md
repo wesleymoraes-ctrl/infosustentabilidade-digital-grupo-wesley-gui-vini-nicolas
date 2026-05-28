@@ -24,3 +24,6 @@ Com base na pesquisa de campo unificada da nossa equipe, documentamos a realidad
 * **Dificuldades:** Fora do período de campanhas, a população precisa armazenar resíduos perigosos em casa, pois falta uma logística contínua e acessível em todos os bairros.
 * **Divulgação:** Eficaz através das redes sociais, materiais informativos e emissoras de rádio locais.
 * **Melhorias Propostas:** Criação de um programa municipal de coleta domiciliar via aplicativo, facilitando o recolhimento de linha branca e TVs pesadas direto na casa do morador.
+
+
+[⬅️ Voltar para o README principal](../README.md)
