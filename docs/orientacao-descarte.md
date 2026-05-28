@@ -37,3 +37,6 @@ De acordo com os dados levantados pela equipe nas quatro cidades, o cenário atu
 * ⚠️ **Integridade Física:** Nunca tente abrir baterias e não quebre telas de monitores ou tubos de TV antigos para evitar contaminação por mercúrio ou chumbo.
 * 🔥 **Risco de Fogo:** Jamais queime fios de cobre para retirar o plástico. A queima desses materiais libera gases altamente cancerígenos na atmosfera.
 * 🗑️ **Lixo Comum:** Sob nenhuma hipótese descarte qualquer tipo de lixo eletrônico nas lixeiras de lixo comum (orgânico ou reciclável doméstico).
+
+
+[⬅️ Voltar para o README principal](../README.md)
