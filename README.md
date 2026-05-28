@@ -12,11 +12,11 @@
 > Utilize os links abaixo para navegar rapidamente entre as diferentes abas e arquivos de documentação do nosso sistema:
 
 * 📄 [**Página Inicial (README)**](./README.md) — Visão geral do projeto e integrantes.
-* 🔎 [**Análise Crítica Regional**](./README.md#-analise-critica-do-descarte-na-regiao) — Diagnóstico completo com os IDs de cada município.
-* 🗂️ [**Modelo de Dados (Supabase)**](./modelo_de_dados.md) — Dicionário de dados e esquema das tabelas relacionais.
+* 🔎 [**Análise Crítica Regional**](./README.md#analise-critica.md) — Diagnóstico completo com os IDs de cada município.
+* 🗂️ [**Modelo de Dados (Supabase)**](./modelo-dados.md) — Dicionário de dados e esquema das tabelas relacionais.
 
 ---
-
+[⬅️ Voltar para o README principal](../README.md)
 ## 👥 Integrantes do Grupo
 
 > [!TIP]
