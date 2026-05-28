@@ -27,6 +27,3 @@
 * 🔋 **Baterias e Pilhas:** Nunca descarte se estiverem estufadas ou vazando sem proteção plástica isolante.
 * 🔒 **Apagamento de Dados:** Remova contas, fotos e dados pessoais de celulares e computadores antes de descartar.
 * ⚠️ **Integridade Física:** Não quebre telas de monitores ou tubos de TV para evitar contaminação por mercúrio ou chumbo.
-
----
-[⬅️ Voltar para o README principal](README.md)
