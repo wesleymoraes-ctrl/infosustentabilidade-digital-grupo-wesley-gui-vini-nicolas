@@ -94,4 +94,4 @@ Desenvolver uma plataforma informativa e acessível que reúna conteúdos relaci
 
 
 ```txt
-[https://docs.google.com/spreadsheets/d/1xcxSNNiipvU9QezDOclQ_O7zG0jjs_6CYyKTSK3xKKk/edit?usp=sharing]
+https://docs.google.com/spreadsheets/d/1xcxSNNiipvU9QezDOclQ_O7zG0jjs_6CYyKTSK3xKKk/edit?usp=sharing
