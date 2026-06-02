@@ -1,1 +1,103 @@
-
+{
+  "projeto": "InfoSustentabilidade Digital",
+  "pontos_coleta": [
+    {
+      "id_ponto": 1,
+      "nome_local": "Campanha Penso, Logo Destino! (Prefeitura Municipal)",
+      "endereco": "Ao lado da Prefeitura Municipal",
+      "bairro": "Centro",
+      "cidade": "Atalanta",
+      "contato": "Departamento de Meio Ambiente (Facebook da Prefeitura)",
+      "materiais_aceitos": [
+        "eletronicos",
+        "pilhas",
+        "baterias",
+        "tvs"
+      ],
+      "procedimento": {
+        "precisa_agendamento": false,
+        "possui_custo": false,
+        "modalidade": "campanha temporaria"
+      },
+      "evidencias": [
+        {
+          "tipo": "panfleto / print de rede social",
+          "arquivo": "evidencias/atalanta-facebook.png"
+        }
+      ]
+    },
+    {
+      "id_ponto": 2,
+      "nome_local": "Sede da Prefeitura Municipal de Vitor Meireles",
+      "endereco": "Rua das Flores, 123",
+      "bairro": "Centro",
+      "cidade": "Vitor Meireles",
+      "contato": "Prefeitura Municipal",
+      "materiais_aceitos": [
+        "eletronicos",
+        "computadores",
+        "celulares"
+      ],
+      "procedimento": {
+        "precisa_agendamento": false,
+        "possui_custo": false,
+        "modalidade": "entrega no local"
+      },
+      "evidencias": [
+        {
+          "tipo": "foto / documento oficial",
+          "arquivo": "evidencias/vitor-meireles-prefeitura.png"
+        }
+      ]
+    },
+    {
+      "id_ponto": 3,
+      "nome_local": "Pontos e Campanhas SAMAE Indaial",
+      "endereco": "Pontos centrais e bairros diversos",
+      "bairro": "Diversos",
+      "cidade": "Indaial",
+      "contato": "SAMAE Indaial (Portal Eletrônico)",
+      "materiais_aceitos": [
+        "lixo eletronico",
+        "e-waste",
+        "eletrodomesticos"
+      ],
+      "procedimento": {
+        "precisa_agendamento": false,
+        "possui_custo": false,
+        "modalidade": "campanha periodica"
+      },
+      "evidencias": [
+        {
+          "tipo": "print de site",
+          "arquivo": "evidencias/indaial-samae.png"
+        }
+      ]
+    },
+    {
+      "id_ponto": 4,
+      "nome_local": "Recipiente de Coleta UNIFEBE",
+      "endereco": "Campus UNIFEBE",
+      "bairro": "Santa Terezinha",
+      "cidade": "Brusque",
+      "contato": "Secretaria da UNIFEBE / Redes Sociais da Prefeitura",
+      "materiais_aceitos": [
+        "linha branca",
+        "tvs",
+        "computadores",
+        "baterias"
+      ],
+      "procedimento": {
+        "precisa_agendamento": false,
+        "possui_custo": false,
+        "modalidade": "entrega no local"
+      },
+      "evidencias": [
+        {
+          "tipo": "print de rede social",
+          "arquivo": "evidencias/brusque-instagram.png"
+        }
+      ]
+    }
+  ]
+}
