@@ -1,8 +1,4 @@
-# 📸 Evidências e Participação no GitHub (Bloco 9)
 
-> Este documento reúne as evidências do projeto **InfoSustentabilidade**, detalhando os dados recolhidos, a estruturação do banco de dados e a divisão de tarefas entre os membros da equipa no repositório.
-
----
 
 ## 👥 1. Evidências do GitHub (Participação e Divisão)
 
