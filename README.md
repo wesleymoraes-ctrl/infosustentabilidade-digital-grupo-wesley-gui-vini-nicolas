@@ -93,3 +93,11 @@ Desenvolver uma plataforma informativa e acessível que reúna conteúdos relaci
 ## 📊 Link da Planilha
 
 * 🔗 [Acessar Planilha de Dados Brutos Google Sheets](https://docs.google.com/spreadsheets/d/1xcxSNNiipvU9QezDOclQ_O7zG0jjs_6CYyKTSK3xKKk/edit?usp=sharing)
+
+
+
+
+
+
+
+
