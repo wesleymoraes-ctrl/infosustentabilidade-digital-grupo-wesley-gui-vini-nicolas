@@ -1,6 +1,6 @@
 
 
-## 👥 1. Evidências do GitHub (Participação e Divisão)
+## 👥 1.0 Evidências do GitHub (Participação e Divisão)
 
 Para garantir que todos os integrantes apareçam no histórico do repositório, as tarefas e edições de arquivos foram divididas da seguinte forma:
 
